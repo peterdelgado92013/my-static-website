@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-label="Secure Static Website on AWS S3">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="30%" cy="20%" r="60%">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="75%" cy="25%" r="55%">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="500" rx="28" fill="url(#glow1)"/>
+  <rect width="1600" height="500" rx="28" fill="url(#glow2)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.08">
+    <path d="M0 80H1600M0 160H1600M0 240H1600M0 320H1600M0 400H1600" stroke="#ffffff"/>
+    <path d="M140 0V500M280 0V500M420 0V500M560 0V500M700 0V500M840 0V500M980 0V500M1120 0V500M1260 0V500M1400 0V500" stroke="#ffffff"/>
+  </g>
+
+  <!-- Logo mark -->
+  <g transform="translate(120,120)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="260" height="260" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+    <!-- Cloud -->
+    <path d="M84 148c-18 0-32-14-32-32 0-16 10-28 24-31 5-24 26-42 52-42 23 0 43 14 50 35 18 1 32 16 32 34 0 19-15 36-35 36H84z"
+          fill="none" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Lock -->
+    <rect x="118" y="150" width="92" height="72" rx="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+    <path d="M138 150v-18c0-18 14-32 32-32s32 14 32 32v18"
+          fill="none" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="164" cy="186" r="8" fill="#e5e7eb"/>
+    <path d="M164 194v16" stroke="#e5e7eb" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Title text -->
+  <g transform="translate(440,165)">
+    <text x="0" y="0" fill="#e5e7eb" font-size="52" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="800">
+      Secure Static Website
+    </text>
+    <text x="0" y="48" fill="rgba(229,231,235,0.78)" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="600">
+      AWS S3 Project • Permissions • Bucket Policy • Static Hosting
+    </text>
+
+    <!-- Chips -->
+    <g transform="translate(0,78)">
+      <rect x="0" y="0" width="92" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="46" y="24" text-anchor="middle" fill="#34d399" font-size="14" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="700">S3</text>
+
+      <rect x="110" y="0" width="92" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="156" y="24" text-anchor="middle" fill="#38bdf8" font-size="14" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="700">IAM</text>
+
+      <rect x="220" y="0" width="128" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="284" y="24" text-anchor="middle" fill="#e5e7eb" font-size="14" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="700">Static Hosting</text>
+
+      <rect x="366" y="0" width="132" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="432" y="24" text-anchor="middle" fill="#e5e7eb" font-size="14" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="700">403 Fix</text>
+    </g>
+  </g>
+
+  <!-- Footer line -->
+  <text x="1560" y="470" text-anchor="end" fill="rgba(229,231,235,0.55)" font-size="14"
+        font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="600">
+    Built & documented by Peter Delgado
+  </text>
+</svg>
