@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/screenshots/header-logo.png" width="800">
+  <img src="PASTE_THE_RAW_URL_HERE" width="800" alt="Secure Static Website on AWS S3">
 </p>
 
 # 🔐 Secure Static Website Hosting on AWS S3
