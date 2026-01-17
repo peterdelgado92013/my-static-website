@@ -1,0 +1,47 @@
+[
+  {
+    "title": "AWS S3 Static Website Hosting",
+    "category": "AWS",
+    "summary": "Hosted a static site and fixed common permission and routing issues.",
+    "impact": [
+      "Resolved 403 AccessDenied by correcting bucket policy and public access settings.",
+      "Built a clean /assets structure (css/js/images) with stable relative paths.",
+      "Configured website endpoints and error page behavior."
+    ],
+    "tags": ["S3", "IAM", "Static Hosting"],
+    "links": {
+      "demo": "",
+      "github": ""
+    }
+  },
+  {
+    "title": "osTicket Helpdesk Lab",
+    "category": "IT",
+    "summary": "Simulated service desk workflows and documented ticket resolution steps.",
+    "impact": [
+      "Created agents, users, SLAs, and ticket categories to match real helpdesk ops.",
+      "Documented troubleshooting steps for repeatable resolutions.",
+      "Recorded a short demo walkthrough (optional)."
+    ],
+    "tags": ["Tickets", "SLA", "Documentation"],
+    "links": {
+      "demo": "",
+      "github": ""
+    }
+  },
+  {
+    "title": "Azure Identity Fundamentals Lab",
+    "category": "Azure",
+    "summary": "Practiced identity basics with structured users/groups and access concepts.",
+    "impact": [
+      "Organized users/groups with naming standards and clean documentation.",
+      "Practiced access control concepts and basic identity flows.",
+      "Captured screenshots and created a README-style walkthrough."
+    ],
+    "tags": ["Identity", "RBAC", "Azure"],
+    "links": {
+      "demo": "",
+      "github": ""
+    }
+  }
+]
