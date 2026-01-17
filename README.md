@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/peterdelgado92013/my-static-website/main/screenshots/screenshots/header-logo.svg" width="800" alt="Secure Static Website on AWS S3">
+  <img src="https://raw.githubusercontent.com/peterdelgado92013/my-static-website/main/screenshots/header-logo.png" width="800" alt="Secure Static Website on AWS S3">
 </p>
 
 # 🔐 Secure Static Website Hosting on AWS S3
@@ -30,6 +30,120 @@ The goal was not just to get a website online, but to understand **why each conf
 ---
 
 ## 📂 Step-by-Step Implementation
+
+---
+# 🔐 Secure Static Website Hosting on AWS S3
+
+This project documents my end-to-end process of hosting a **secure static website on Amazon S3**, including troubleshooting a real **403 Access Denied** error and implementing correct bucket policies.
+
+The goal was not just to get a website online, but to understand **why each configuration step is required** in a real cloud environment.
+
+---
+
+## 🎥 Project Walkthrough (YouTube)
+
+This **unlisted** video walks through the full project from start to finish, including:
+- Creating and configuring the S3 bucket
+- Enabling public access safely
+- Fixing a real **403 Access Denied** error
+- Verifying bucket policies and permissions
+- Final successful deployment
+
+👉 Click the thumbnail below to watch the walkthrough:
+
+[![AWS S3 Static Website Walkthrough](https://img.youtube.com/vi/5WCg-RplnbU/maxresdefault.jpg)](https://youtu.be/5WCg-RplnbU)
+
+🔗 **Direct video link:**  
+https://youtu.be/5WCg-RplnbU
+
+---
+
+## 🎯 Project Objectives
+- Host a static website using Amazon S3
+- Configure public access securely
+- Apply and verify bucket policies
+- Troubleshoot and resolve 403 Access Denied errors
+- Use VS Code for structured frontend development
+- Document the process clearly and repeatably
+
+---
+
+## 🛠️ Technologies Used
+- Amazon S3
+- IAM & S3 Bucket Policies
+- HTML, CSS, JavaScript
+- Visual Studio Code
+- GitHub (documentation & portfolio)
+
+---
+
+## 📂 Step-by-Step Implementation
+
+### 1️⃣ Create an S3 Bucket
+**Why:**  
+An S3 bucket is the foundation of static website hosting. It acts as the container for all website files.
+
+![Create S3 Bucket](./screenshots/01-create-s3-bucket.png)
+
+---
+
+### 2️⃣ Enable Public Access
+**Why:**  
+Public access is blocked by default in S3. Since this project is a public website, access must be explicitly allowed while still controlled through policies.
+
+![Enable Public Access](./screenshots/02-enabling-public-access.png)
+
+---
+
+### 3️⃣ Confirm Bucket Creation
+**Why:**  
+Verifying the bucket ensures it exists and is ready before continuing configuration.
+
+![Bucket Created Successfully](./screenshots/03-s3-bucket-successful.png)
+
+---
+
+### 4️⃣ Upload HTML Files
+**Why:**  
+Uploading website files allows S3 to serve actual content instead of an empty bucket.
+
+![Upload HTML Files](./screenshots/04-upload-html-to-s3-bucket.png)
+
+---
+
+### 5️⃣ Enable Static Website Hosting
+**Why:**  
+This allows S3 to serve the files through a public website endpoint.
+
+![Enable Static Website Hosting](./screenshots/05-enable-static-web-hosting.png)
+
+---
+
+### 6️⃣ Configure Bucket Policy Permissions
+**Why:**  
+Bucket policies explicitly allow public `GetObject` access, which is required for browsers to load files.
+
+![Bucket Policy Permissions](./screenshots/06-s3-bucket-policy-permissions.png)
+
+---
+
+### 7️⃣ Troubleshoot 403 Access Denied Error
+**Why:**  
+A real-world **403 Forbidden** error occurred due to misconfigured permissions. Identifying and fixing this is a critical cloud skill.
+
+![403 Access Denied Error](./screenshots/07-403-forbidden-access-denied.png)
+
+---
+
+### 8️⃣ Final Web Page Success
+**Why:**  
+After correcting permissions and policies, the website loaded successfully.
+
+![Final Website Success](./screenshots/08-final-web-page-success.png)
+
+---
+
+### 9️⃣ Verify Bucket Pol
 
 ---
 
